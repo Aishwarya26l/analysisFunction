@@ -19,11 +19,10 @@ def getIndexPage():
             <div id="app">
             <div class="md-layout">
                 <div class="md-layout-item md-size-100">
-                <md-card>
+                <md-card class="input-card">
                     <md-card-header>
                     <md-card-header-text>
-                        <div class="md-title">Analysis Function</div>
-                        <div class="md-subhead">Analyse your text responses</div>
+                        <div class="md-title">Analysis Function - Analyse your text responses </div>
                     </md-card-header-text>
                     </md-card-header>
                     <md-card-content>
@@ -44,7 +43,7 @@ def getIndexPage():
                 </md-card>
                 </div>
                 <div class="md-layout-item md-size-100">
-                <md-card>
+                <md-card class="input-card">
                     <md-card-header>
                     <md-card-header-text>
                         <div class="md-title">Input</div>
@@ -72,8 +71,7 @@ def getIndexPage():
                 <md-card>
                     <md-card-header>
                     <md-card-header-text>
-                        <div class="md-title">Output</div>
-                        <div class="md-subhead">Analysis results</div>
+                        <div class="md-title">Results</div>
                     </md-card-header-text>
                     </md-card-header>
                     <md-card-content>
@@ -136,9 +134,6 @@ def getIndexPage():
             })
         </script>
         <style lang="scss" scoped>
-            #app {
-                padding: 10px;
-            }
             textarea {
                 font-size: 1rem !important;
             }
@@ -156,6 +151,12 @@ def getIndexPage():
             }
             .md-content{
                 min-height:500px;
+            }
+            .md-card{
+                overflow: hidden;
+            }
+            .input-card{
+                height: 200px;
             }
             .output-tab{
                 min-height:400px !important;
